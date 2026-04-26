@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdulaziz Al-Aqeel – Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="top">
+  <header role="banner">
+    <h1>Abdulaziz Al-Aqeel</h1>
+    <h2>Computer Science Senior – KSU | Future AI Engineer</h2>
+
+    <p id="intro">
+      Welcome to my website. This project demonstrates semantic HTML structure,
+      navigation, lists, accessibility attributes, and internal linking.
+    </p>
+
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <hr />
+  </header>
+
+  <main role="main">
+    <section aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <p>
+        I am a senior Computer Science student at King Saud University (KSU).
+        I'm passionate about AI and I enjoy exploring how technology can solve real problems.
+      </p>
+      <p>
+        My strongest trait is <span class="highlight">curiosity</span> — I like asking "why" and "how", then building solutions.
+      </p>
+    </section>
+
+    <section aria-labelledby="strengths-title">
+      <p class="section-label">Core Traits</p>
+      <h2 id="strengths-title">Strengths (Unordered List)</h2>
+      <ul>
+        <li>Problem-solving and analytical thinking</li>
+        <li>Curiosity and continuous learning</li>
+        <li>Interest in AI and real-world applications</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="goals-title">
+      <p class="section-label">Roadmap</p>
+      <h2 id="goals-title">Goals (Ordered List)</h2>
+      <ol>
+        <li>Strengthen my AI foundations (ML, data, modeling)</li>
+        <li>Build more practical projects and improve documentation</li>
+        <li>Start my career path toward becoming an AI Engineer</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="skills-title">
+      <p class="section-label">Expertise</p>
+      <h2 id="skills-title">Skills Summary (Definition List)</h2>
+      <dl>
+        <dt>Problem-solving</dt>
+        <dd>Breaking complex tasks into clear steps and testing solutions logically.</dd>
+
+        <dt>AI interest</dt>
+        <dd>Learning machine learning concepts and applying them in projects.</dd>
+
+        <dt>Team contribution</dt>
+        <dd>Helping in organized environments and supporting tasks responsibly.</dd>
+      </dl>
+    </section>
+
+    <p class="back-to-top"><a href="#top">Back to Top</a></p>
+  </main>
+
+  <footer role="contentinfo">
+    <hr />
+    <p>&copy; 2026 Abdulaziz Al-Aqeel</p>
+  </footer>
+
+  <!-- External JavaScript (placed just before </body> as recommended) -->
+  <script src="scripts.js"></script>
+</body>
+</html>

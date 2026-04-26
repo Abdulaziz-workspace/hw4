@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdulaziz Al-Aqeel – Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="top">
+  <header role="banner">
+    <h1>Projects</h1>
+
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <hr />
+  </header>
+
+  <main role="main">
+    <article aria-labelledby="p1-title">
+      <h2 id="p1-title">Project 1: Stock Analyzer (Java)</h2>
+
+      <button type="button"
+              onclick="toggleProjectDescription('p1-desc', this);">
+        Hide Description
+      </button>
+
+      <p id="p1-desc">
+        A Java project focused on analyzing stock data and presenting useful insights.
+        The project emphasizes structured logic and clear output.
+      </p>
+
+      <figure>
+        <img src="images/project1.png" alt="Screenshot from the Stock Analyzer project" width="600" />
+        <figcaption>Stock Analyzer — sample output / visualization.</figcaption>
+      </figure>
+
+      <hr />
+    </article>
+
+    <article aria-labelledby="p2-title">
+      <h2 id="p2-title">Project 2: Mall Database (Java)</h2>
+
+      <button type="button"
+              onclick="toggleProjectDescription('p2-desc', this);">
+        Hide Description
+      </button>
+
+      <p id="p2-desc">
+        A Java project designed to manage mall-related data using structured data handling and system logic.
+      </p>
+
+      <figure>
+        <img src="images/project2.png" alt="Screenshot from the Mall Database project" width="600" />
+        <figcaption>Mall Database — interface/output preview.</figcaption>
+      </figure>
+    </article>
+
+    <p class="back-to-top"><a href="#top">Back to Top</a></p>
+  </main>
+
+  <footer role="contentinfo">
+    <hr />
+    <p>&copy; 2026 Abdulaziz Al-Aqeel</p>
+  </footer>
+
+  <!-- External JavaScript (placed just before </body> as recommended) -->
+  <script src="scripts.js"></script>
+</body>
+</html>

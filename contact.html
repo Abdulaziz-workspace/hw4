@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdulaziz Al-Aqeel – Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="top">
+  <header role="banner">
+    <h1>Contact</h1>
+
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+
+    <hr />
+  </header>
+
+  <main role="main">
+    <section aria-labelledby="form-title">
+      <h2 id="form-title">Send a Message</h2>
+
+      <form action="#" method="post" aria-label="Contact Form" onsubmit="return validateContactForm(event);">
+        <p>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" />
+        </p>
+
+        <p>
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" />
+        </p>
+
+        <p>
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="6" cols="40"></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Send</button>
+          <button type="reset">Clear</button>
+        </p>
+      </form>
+    </section>
+
+    <section aria-labelledby="mailto-title">
+      <h2 id="mailto-title">Email Directly</h2>
+      <p>
+        You can email me at:
+        <a href="mailto:443100944@student.ksu.edu.sa">443100944@student.ksu.edu.sa</a>
+      </p>
+    </section>
+
+    <p class="back-to-top"><a href="#top">Back to Top</a></p>
+  </main>
+
+  <footer role="contentinfo">
+    <hr />
+    <p>&copy; 2026 Abdulaziz Al-Aqeel</p>
+  </footer>
+
+  <!-- External JavaScript (placed just before </body> as recommended) -->
+  <script src="scripts.js"></script>
+</body>
+</html>

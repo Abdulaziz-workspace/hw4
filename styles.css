@@ -1,0 +1,342 @@
+/* ===================================================
+   styles.css – HW3: CSS Enhancement
+   Linked externally to all pages via <link>
+   =================================================== */
+
+/* ----- 1. General / Inherited Styles (Cascade & Inheritance) ----- */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, sans-serif;   /* fallback fonts */
+  font-size: 1rem;                                        /* relative unit  */
+  line-height: 1.6;
+  color: #2c2c2c;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ----- 2. Element Selectors ----- */
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);          /* text-shadow */
+  color: #1a3c5e;
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  color: #27548A;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #3a6ea5;
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 0.75em;
+}
+
+a {
+  color: #27548A;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #1a3c5e;
+}
+
+ul, ol {
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+dl {
+  margin-bottom: 1em;
+}
+
+dt {
+  font-weight: 700;
+  color: #1a3c5e;
+  margin-top: 0.6em;
+}
+
+dd {
+  margin-left: 1.5em;
+  margin-bottom: 0.4em;
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #c4cdd5;
+  margin: 1em 0;
+}
+
+
+/* ----- 3. Header & Background ----- */
+
+header {
+  background-color: #dce6f0;
+  padding: 1.5em 2em 1em;
+  border-bottom: 3px solid #27548A;
+}
+
+
+/* ----- 4. Navigation Styling (descendant selectors) ----- */
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0.75em 0 0.5em;
+  display: flex;
+  gap: 0.25em;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;                     /* remove underlines   */
+  color: #ffffff;
+  background-color: #27548A;
+  padding: 0.4em 1em;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #1a3c5e;
+  color: #ffffff;
+}
+
+nav a[aria-current="page"] {
+  background-color: #1a3c5e;
+  border-bottom: 2px solid #f0c040;
+}
+
+
+/* ----- 5. Main Content Area (Box Model) ----- */
+
+main {
+  max-width: 50rem;                          /* relative unit */
+  margin: 2em auto;
+  padding: 1.5em 2em;
+  background-color: #ffffff;
+  border: 1px solid #d5dce3;
+  border-radius: 6px;
+}
+
+section {
+  margin-bottom: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+article {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #e8ecf0;
+}
+
+article:last-of-type {
+  border-bottom: none;
+}
+
+
+/* ----- 6. Footer ----- */
+
+footer {
+  text-align: center;
+  padding: 1em 2em;
+  font-size: 0.85rem;
+  color: #667788;
+}
+
+footer hr {
+  max-width: 50rem;
+  margin: 0 auto 0.75em;
+}
+
+
+/* ----- 7. Class Selectors (reusable) ----- */
+
+.highlight {
+  background-color: #fff5cc;
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.section-label {
+  text-transform: uppercase;                 /* text-transform */
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: #6688aa;
+  margin-bottom: 0.2em;
+}
+
+
+/* ----- 8. ID Selector (unique element) ----- */
+
+#intro {
+  font-size: 1.05rem;
+  color: #445566;
+  border-left: 4px solid #27548A;
+  padding-left: 0.75em;
+  margin-bottom: 1em;
+}
+
+
+/* ----- 9. Blockquote ----- */
+
+blockquote {
+  margin: 1em 0;
+  padding: 0.75em 1.25em;
+  border-left: 4px solid #f0c040;
+  background-color: #fffdf0;
+  font-style: italic;
+  color: #555555;
+}
+
+
+/* ----- 10. Figures & Images ----- */
+
+figure {
+  margin: 1em 0;
+  padding: 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #d5dce3;
+  border-radius: 4px;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: #667788;
+  margin-top: 0.4em;
+  font-style: italic;
+}
+
+
+/* ----- 11. Form Styling ----- */
+
+form {
+  max-width: 28rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1a3c5e;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.25em;
+  border: 1px solid #b0bcc8;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #27548A;
+  box-shadow: 0 0 0 2px rgba(39, 84, 138, 0.2);
+}
+
+button {
+  padding: 0.5em 1.4em;
+  font-size: 0.95rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+
+button[type="submit"] {
+  background-color: #27548A;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+button[type="submit"]:hover {
+  background-color: #1a3c5e;
+}
+
+button[type="reset"] {
+  background-color: #e0e4e8;
+  color: #333333;
+}
+
+button[type="reset"]:hover {
+  background-color: #cdd2d8;
+}
+
+
+/* ----- 12. Back-to-Top Link ----- */
+
+.back-to-top {
+  display: inline-block;
+  margin-top: 1.5em;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+
+/* ----- 13. Responsive Basics (relative units used throughout) ----- */
+
+@media (max-width: 40em) {
+  header {
+    padding: 1em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.4em;
+  }
+
+  main {
+    margin: 1em;
+    padding: 1em;
+  }
+}
